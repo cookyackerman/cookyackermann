@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclaje de PET - Cuida el Planeta</title>
+    
+  <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+    <header>
+        <h1>♻️ Reciclaje de PET</h1>
+        <p>Juntos por un planeta más limpio y verde</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#que-es-pet">¿Qué es PET?</a></li>
+            <li><a href="#tres-r">Las 3 R's</a></li>
+            <li><a href="#ejemplos">Ejemplos Prácticos</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#centros">Centros de Acopio</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="que-es-pet">
+            <h2>¿Qué es el PET?</h2>
+            <p>El <strong>PET (Polietileno Tereftalato)</strong> es uno de los plásticos más comunes en nuestra vida diaria. Es ligero, resistente y 100% reciclable.</p>
+            
+            <div class="pet-info">
+                <div class="info-card">
+                    <h3>🔍 Identificación</h3>
+                    <p>Busca el símbolo de reciclaje con el número <strong>1</strong> dentro del triángulo.</p>
+                </div>
+                <div class="info-card">
+                    <h3>📦 Usos Comunes</h3>
+                    <p>Botellas de agua, refrescos, aceite, envases de alimentos y fibras textiles.</p>
+                </div>
+                <div class="info-card">
+                    <h3>⏱️ Tiempo de Degradación</h3>
+                    <p>Tarda hasta <strong>1000 años</strong> en descomponerse naturalmente.</p>
+                </div>
+                <div class="info-card">
+                    <h3>♻️ Beneficio del Reciclaje</h3>
+                    <p>Una tonelada de PET reciclado ahorra <strong>3.8 barriles de petróleo</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tres-r">
+            <h2>Las 3 R's del Reciclaje</h2>
+            <p>La clave para un futuro sostenible está en aplicar estos tres principios en orden de importancia:</p>
+            
+            <div class="tres-r">
+                <div class="r-card" onclick="toggleInfo(this)">
+                    <div class="icon">🛑</div>
+                    <h3>REDUCIR</h3>
+                    <p><strong>Lo más importante:</strong> Compra menos plástico. Usa botellas reutilizables, evita productos con empaques excesivos y elige alternativas sostenibles.</p>
+                </div>
+                <div class="r-card" onclick="toggleInfo(this)">
+                    <div class="icon">🔄</div>
+                    <h3>REUTILIZAR</h3>
+                    <p><strong>Dale segunda vida:</strong> Antes de tirar, piensa si puedes usar ese envase para otra cosa. Creatividad y ahorro van de la mano.</p>
+                </div>
+                <div class="r-card" onclick="toggleInfo(this)">
+                    <div class="icon">♻️</div>
+                    <h3>RECICLAR</h3>
+                    <p><strong>Última opción:</strong> Cuando ya no puedas reducir ni reutilizar, asegúrate de depositar correctamente en centros de reciclaje.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos">
+            <h2>Ejemplos Prácticos de Reciclaje en Casa</h2>
+            <p>Transforma tus botellas PET en objetos útiles y creativos:</p>
+            
+            <div class="ejemplos-grid">
+                <div class="ejemplo-card">
+                    <h4>🌱 Macetas Ecológicas</h4>
+                    <p>Corta botellas por la mitad, haz orificios de drenaje y cultiva plantas aromáticas o suculentas.</p>
+                </div>
+                <div class="ejemplo-card">
+                    <h4>📝 Organizadores de Escritorio</h4>
+                    <p>Decora botellas cortadas para guardar lápices, marcadores y útiles escolares.</p>
+                </div>
+                <div class="ejemplo-card">
+                    <h4>🎨 Comederos para Aves</h4>
+                    <p>Crea comederos colgantes haciendo aberturas laterales y llenándolos con semillas.</p>
+                </div>
+                <div class="ejemplo-card">
+                    <h4>💡 Lámparas Decorativas</h4>
+                    <p>Usa el fondo de botellas para crear flores de plástico y lámparas únicas.</p>
+                </div>
+                <div class="ejemplo-card">
+                    <h4>🧹 Escobas y Trapeadores</h4>
+                    <p>Corta tiras de plástico de varias botellas y únelas a un palo de escoba.</p>
+                </div>
+                <div class="ejemplo-card">
+                    <h4>🎁 Cajas de Regalo</h4>
+                    <p>Transforma botellas transparentes en hermosas cajas decorativas para regalos pequeños.</p>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <div class="quiz-question">🎯 Mini Quiz: ¿Cuál es la mejor opción?</div>
+                <p style="margin-bottom: 1rem;">Si tienes una botella de PET vacía, ¿qué deberías hacer PRIMERO?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, false)">Llevarla inmediatamente al centro de reciclaje</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, true)">Pensar si puedo reutilizarla para algo útil</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, false)">Tirarla a la basura común</div>
+                </div>
+                <div class="quiz-result" id="quizResult"></div>
+            </div>
+        </section>
+
+       <section id="videos">
+    <h2>🎥 Videos Tutoriales de Reciclaje</h2>
+    <p>Aprende viendo: tutoriales paso a paso para reciclar y reutilizar PET</p>
+    
+    <div class="videos-grid">
+
+        <div class="video-card">
+            <div class="video-container">
+                <video src="Videos Desarrollo/video1.mp4" controls></video>
+            </div>
+            <h4>3 ideas con Botellas de Plastico PET</h4>
+            <p>Ofrece 3 ideas para utilizar las botellas en la vida cotidiana</p>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <video src="Videos Desarrollo/video2.mp4" controls></video>
+            </div>
+            <h4>IDEAS con Botellas de Plastico(manualidades con reciclaje)</h4>
+            <p>Manualidades que se pueden hacer en casa con plastico</p>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <video src="Videos Desarrollo/video3.mp4" controls></video>
+            </div>
+            <h4>5 Manualidades FACILES Y RAPIDAS con botellas de plastico </h4>
+            <p>Manualidades que se pueden hacer en epoca Navideña</p>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <video src="Videos Desarrollo/video4.mp4" controls></video>
+            </div>
+            <h4>Increíbles ideas de manualidades con botellas de plástico: lo mejor del agua DIY para la decoración del hogar</h4>
+            <p>Decoracion para casa con PET</p>
+        </div>
+
+    </div>
+        <!-- aquí van tus tarjetas de canales tal como las tenías -->
+    </div>
+</section>
+
+
+            <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: #2e7d32;">🌟 Canales de YouTube Recomendados</h3>
+            
+            <div class="canales-grid">
+                <div class="canal-card">
+                    <div class="canal-icon">📺</div>
+                    <h4>5-Minute Crafts</h4>
+                    <p>Canal con miles de ideas creativas de reciclaje y manualidades con PET. Perfecto para principiantes.</p>
+                    <a href="https://youtube.com/@5minutecraftsyoutube?si=79_v0-A2fpglml3B" target="_blank" class="btn-canal">Ver Canal</a>
+                </div>
+
+                <div class="canal-card">
+                    <div class="canal-icon">🎨</div>
+                    <h4>DIY Plastic Bottle Crafts</h4>
+                    <p>Tutoriales divertidos y fáciles de seguir sobre reciclaje creativo y proyectos DIY con botellas.</p>
+                    <a href="https://youtube.com/@kalyaniscorner?si=FkndSPgtwrZwl1a9" target="_blank" class="btn-canal">Ver Canal</a>
+                </div>
+
+                <div class="canal-card">
+                    <div class="canal-icon">♻️</div>
+                    <h4>Ecoosfera</h4>
+                    <p>Contenido sobre sustentabilidad, reciclaje y cuidado del medio ambiente con enfoque educativo.</p>
+                    <a href="https://www.youtube.com/@Ecoosfera" target="_blank" class="btn-canal">Ver Canal</a>
+                </div>
+
+                <div class="canal-card">
+                    <div class="canal-icon">🌱</div>
+                    <h4>Plantas y Jardines</h4>
+                    <p>Especializado en crear jardines verticales y sistemas de cultivo con materiales reciclados.</p>
+                    <a href="https://www.youtube.com/@PlantasyJardines" target="_blank" class="btn-canal">Ver Canal</a>
+                </div>
+
+                <div class="canal-card">
+                    <div class="canal-icon">🏠</div>
+                    <h4>Girl Crafts</h4>
+                    <p>Sube ideas fáciles y creativas para decorar tu cuarto o casa usando materiales reciclados — desde macetas hasta decoraciones con botellas.</p>
+                    <a href="https://youtube.com/@girlcrafts?si=2a37yySdqtqx7XcN" target="_blank" class="btn-canal">Ver Canal</a>
+                </div>
+
+                <div class="canal-card">
+                    <div class="canal-icon">🔧</div>
+                    <h4>El Rincón de la Ciencia</h4>
+                    <p>Experimentos científicos y proyectos educativos con materiales reciclables.</p>
+                    <a href="https://www.youtube.com/@elrincondelaciencia" target="_blank" class="btn-canal">Ver Canal</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="centros">
+            <h2>Centros de Acopio en Tlaxcala</h2>
+            <p>Encuentra dónde llevar tu PET para que sea reciclado correctamente:</p>
+            
+            <div class="centros-lista">
+                <div class="centro-item">
+                    <h4>📍 Centro de Acopio Municipal - Tlaxcala Centro</h4>
+                    <p><strong>Dirección:</strong> Plaza de la Constitución, Centro Histórico</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 5:00 PM</p>
+                    <p><strong>Materiales:</strong> PET, cartón, papel, vidrio, aluminio</p>
+                </div>
+                <div class="centro-item">
+                    <h4>📍 Recicladora Ecológica del Valle</h4>
+                    <p><strong>Dirección:</strong> Carretera Apizaco-Tlaxcala Km 3.5</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado 7:00 AM - 6:00 PM</p>
+                    <p><strong>Contacto:</strong> (246) 123-4567</p>
+                </div>
+                <div class="centro-item">
+                    <h4>📍 Punto Verde - Zacatelco</h4>
+                    <p><strong>Dirección:</strong> Av. Hidalgo esquina con Morelos, Zacatelco</p>
+                    <p><strong>Horario:</strong> Martes a Domingo 9:00 AM - 4:00 PM</p>
+                    <p><strong>Nota:</strong> Aceptan PET limpio y compactado</p>
+                </div>
+                <div class="centro-item">
+                    <h4>📍 EcoTlax Centro de Reciclaje</h4>
+                    <p><strong>Dirección:</strong> Blvd. Revolución 450, Santa Ana Chiautempan</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 3:00 PM</p>
+                    <p><strong>Incentivo:</strong> Pago por kilogramo de material</p>
+                </div>
+            </div>
+
+            <button class="btn" onclick="mostrarTips()">💡 Tips para preparar tu PET</button>
+            <div id="tips" style="display:none; margin-top:1rem; padding:1.5rem; background:#fff3e0; border-radius:10px;">
+                <h3 style="color:#e65100; margin-bottom:1rem;">Preparación del PET para reciclaje:</h3>
+                <ul style="padding-left:1.5rem; line-height:2;">
+                    <li>✅ Enjuaga las botellas con agua</li>
+                    <li>✅ Retira etiquetas y tapas (recíclalas por separado)</li>
+                    <li>✅ Aplasta las botellas para ahorrar espacio</li>
+                    <li>✅ Separa por color si es posible (transparente, verde, otros)</li>
+                    <li>✅ Mantén el material seco y limpio</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>♻️ Cada acción cuenta. ¡Juntos podemos hacer la diferencia!</p>
+        <p style="margin-top:1rem; font-size:0.9rem;">© 2025 - Reciclaje con Nosotros | Desarrollo Sustentable</p>
+    </footer>
+
+    <script src="pet.js"></script>
+</body>
+</html>
